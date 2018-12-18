@@ -61,7 +61,6 @@ public class Parser {
                 if (parseData.getHtml() == null) {
                     throw new ParseException();
                 }
-                parseData.setOutgoingUrls(Net.extractUrls(parseData.getHtml()));
             } else {
                 throw new NotAllowedContentException();
             }
