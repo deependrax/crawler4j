@@ -73,7 +73,6 @@ public class Parser {
                     parseData.setTextContent(
                         new String(page.getContentData(), page.getContentCharset()));
                 }
-                parseData.setOutgoingUrls(Net.extractUrls(parseData.getTextContent()));
                 page.setParseData(parseData);
             } catch (Exception e) {
                 logger.error("{}, while parsing: {}", e.getMessage(), page.getWebURL().getURL());
